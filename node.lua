@@ -125,7 +125,7 @@ local function draw_info()
     end
 
 	local reference = os.time{year=2026, month=7, day=25}
-	local daysfrom = os.difftime(os.time(), os.time()) / (24 * 60 * 60)
+	local daysfrom = (os.time() - reference) / (24 * 60 * 60)
 --	local wholedays = math.floor(daysfrom)
 
     key "Timestamp"
