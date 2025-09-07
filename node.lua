@@ -129,7 +129,7 @@ local function draw_info()
 	local wholedays = math.floor(daysfrom)
 
     key "Timestamp"
-    val(os.date("%X")) .. " " .. wholedays)
+    val(os.date("%X") .. " " .. wholedays)
 
     if info ~= "" then
         val ""
