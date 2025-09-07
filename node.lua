@@ -125,7 +125,7 @@ local function draw_info()
     end
 
     key "Timestamp"
-    val(math.floor(os.time()))
+    val(os.time("%X"))
 
     if info ~= "" then
         val ""
