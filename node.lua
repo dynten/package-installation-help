@@ -125,11 +125,11 @@ local function draw_info()
     end
 
 	local reference = os.time{year=2026, month=7, day=25}
-	local daysfrom = (os.time() - reference) / (24 * 60 * 60)
+	local daysfrom = (reference - os.time()) / (24 * 60 * 60)
 	local wholedays = math.floor(daysfrom)
 
     key "Timestamp"
-    val(os.date("%X") .. " " .. wholedays)
+    val(os.date("%X") .. " " .. wholedays .. " kvar till J26")
 
     if info ~= "" then
         val ""
